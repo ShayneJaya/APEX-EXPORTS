@@ -28,7 +28,7 @@ wwv_flow_imp_shared.create_flow_process(
 '    apex_json.write(''id'', apex_application.g_x01);',
 '    ',
 '    begin',
-'        SELECT showsql into l_sql from NL2SQL_PROMPTS where id=  apex_application.g_x01;',
+'        SELECT showsql into l_sql from NL2SQL_PROMPTS where id= apex_application.g_x01;',
 '    exception',
 '        when no_data_found then',
 '            apex_debug.error(''Critical error %s'', ''No SQL query found for ID '' || apex_application.g_x01);',
@@ -64,7 +64,7 @@ wwv_flow_imp_shared.create_flow_process(
 'end;'))
 ,p_process_clob_language=>'PLSQL'
 ,p_security_scheme=>'MUST_NOT_BE_PUBLIC_USER'
-,p_version_scn=>46018573231647
+,p_version_scn=>45964105711867
 );
 wwv_flow_imp.component_end;
 end;

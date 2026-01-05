@@ -14,7 +14,7 @@ wwv_flow_imp.component_begin (
 wwv_imp_workspace.create_flow(
  p_id=>wwv_flow.g_flow_id
 ,p_owner=>nvl(wwv_flow_application_install.get_schema,'DEV_USER')
-,p_name=>nvl(wwv_flow_application_install.get_application_name,'ADB Chat  V1')
+,p_name=>nvl(wwv_flow_application_install.get_application_name,'ADB Chat  V2')
 ,p_alias=>nvl(wwv_flow_application_install.get_application_alias,'CHATDB113112275')
 ,p_page_view_logging=>'YES'
 ,p_page_protection_enabled_y_n=>'Y'
@@ -52,7 +52,7 @@ wwv_imp_workspace.create_flow(
 ,p_substitution_value_01=>'Cohere'
 ,p_file_prefix => nvl(wwv_flow_application_install.get_static_app_file_prefix,'')
 ,p_files_version=>66
-,p_version_scn=>46038882426902
+,p_version_scn=>46018502189140
 ,p_print_server_type=>'INSTANCE'
 ,p_file_storage=>'DB'
 ,p_is_pwa=>'Y'

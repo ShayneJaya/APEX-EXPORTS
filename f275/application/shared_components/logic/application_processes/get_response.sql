@@ -45,7 +45,7 @@ wwv_flow_imp_shared.create_flow_process(
 'end;'))
 ,p_process_clob_language=>'PLSQL'
 ,p_security_scheme=>'MUST_NOT_BE_PUBLIC_USER'
-,p_version_scn=>46018572058104
+,p_version_scn=>45964105560323
 );
 wwv_flow_imp.component_end;
 end;

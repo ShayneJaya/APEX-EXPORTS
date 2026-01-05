@@ -551,7 +551,7 @@ wwv_flow_imp_page.create_page_process(
 'SELECT DBMS_CLOUD_AI.CREATE_CONVERSATION into l_id;',
 'INSERT INTO NL2SQL_CONVERSATIONS (ID, USERNAME, STARTED_ON) VALUES (l_id, :APP_USER, SYSTIMESTAMP);',
 'insert into NL2SQL_PROMPTS (conv_id, prompt, response, asked_on) ',
-'    values (l_id, ''Chat Interface Instructions'', ''<ul><li>step 1</li><li>step 2</li><li>step 3</li><li>Change initial instructions on Page 1 pre-rendering</li></ul>'', systimestamp);',
+'    values (l_id, ''Chat Interface Instructions'', ''<ul><li>step 1</li><li>step 2</li><li>step 3</li><li>change instructions pre-rending page 1</li></ul>'', systimestamp);',
 ':P1_CONV_ID := l_id;',
 'end;',
 ''))
