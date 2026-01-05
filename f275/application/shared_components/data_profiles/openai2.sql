@@ -1,0 +1,66 @@
+prompt --application/shared_components/data_profiles/openai2
+begin
+--   Manifest
+--     DATA PROFILE: OpenAI2
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2024.11.30'
+,p_release=>'24.2.11'
+,p_default_workspace_id=>10135125799703166
+,p_default_application_id=>275
+,p_default_id_offset=>80028336778020283
+,p_default_owner=>'DEV_USER'
+);
+wwv_flow_imp_shared.create_data_profile(
+ p_id=>wwv_flow_imp.id(674568491479890571)
+,p_name=>'OpenAI2'
+,p_format=>'JSON'
+,p_use_raw_json_selectors=>false
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(674568764994890574)
+,p_data_profile_id=>wwv_flow_imp.id(674568491479890571)
+,p_name=>'CODE'
+,p_sequence=>1
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'error.code'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(674569043993890574)
+,p_data_profile_id=>wwv_flow_imp.id(674568491479890571)
+,p_name=>'TYPE'
+,p_sequence=>2
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'error.type'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(674569324298890574)
+,p_data_profile_id=>wwv_flow_imp.id(674568491479890571)
+,p_name=>'PARAM'
+,p_sequence=>3
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'error.param'
+);
+wwv_flow_imp_shared.create_data_profile_col(
+ p_id=>wwv_flow_imp.id(674569670688890575)
+,p_data_profile_id=>wwv_flow_imp.id(674568491479890571)
+,p_name=>'MESSAGE'
+,p_sequence=>4
+,p_column_type=>'DATA'
+,p_data_type=>'VARCHAR2'
+,p_max_length=>32767
+,p_has_time_zone=>false
+,p_selector=>'error.message'
+);
+wwv_flow_imp.component_end;
+end;
+/
