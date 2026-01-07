@@ -1,0 +1,13 @@
+# APEX temp / generated
+*.log
+*.tmp
+
+# OS noise
+.DS_Store
+
+.env
+*.credentials
+
+# Example: ignore a generated directory
+export_apex_and_push.sh
+
