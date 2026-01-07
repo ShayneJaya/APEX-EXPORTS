@@ -6,7 +6,7 @@ To access older versions of the application, check the Git commit history of thi
 
 Note: The complete export file is included starting from commit e5aea49.
 
-## Releases (newest to oldest)
+## Releases
 
 ### 5.1
 Improvements over 5.0 focused on developer clarity, UI diagnostics, and safer error handling.
