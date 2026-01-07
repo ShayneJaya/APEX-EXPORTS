@@ -4,6 +4,8 @@
 
 # OS noise
 .DS_Store
+**/.DS_Store
+
 
 .env
 *.credentials
